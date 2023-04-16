@@ -32,3 +32,12 @@ class Bike(Vehicle):
 
 bike = Bike("Kawasaki Ninja", " sports", 2020, 1200)
 bike.Enginestart()
+class Lexus(Vehicle):
+    def __init__(self,make,model,year,color):
+        super(). __init__(make,model,year)
+        self.mycolor=color
+    def Enginestart(self):
+        print(f"{self.mymake}{self.mymodel}{self.myyear}{self.mycolor}")
+car=Lexus("LEXUS 570"," Luxurious ",2020," teal")
+car.Enginestart()
+
